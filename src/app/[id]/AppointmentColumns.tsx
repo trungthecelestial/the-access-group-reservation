@@ -58,7 +58,7 @@ export function AppointmentColumns({
     const datetime =
       selectedDateString.substring(0, 10) + 'T' + selectedTime + ':00.000';
 
-    await fetch(`${window.location.origin}/api/appointment`, {
+    await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/appointment`, {
       method: 'POST',
       body: JSON.stringify({
         ...formData,
