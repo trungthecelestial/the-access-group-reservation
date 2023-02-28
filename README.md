@@ -9,7 +9,7 @@ Normally we would have an User table to store info of the user but here to save 
 
 ## Getting Started
 
-First, you need to create your `.env` from `.env.sample` file.
+First, you need to create your `.env` from `.env.sample` file. The environment variable `DATABASE_URL` should be the connection string to your MySQL database.
 
 Then run the development server:
 
