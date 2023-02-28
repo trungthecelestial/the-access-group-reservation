@@ -16,10 +16,7 @@ export async function getAppointment(appointmentId: string) {
       link: appointmentId,
     },
   });
-  return {
-    ...appointment,
-    // datetime: appointment?.datetime?.toISOString() ?? '',
-  };
+  return appointment;
 }
 
 type AppointmentPageProps = {
