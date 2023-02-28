@@ -1,0 +1,7 @@
+{
+  "endOfLine": "auto",
+  "singleQuote": true,
+  "plugins": [
+    "prettier-plugin-tailwindcss"
+  ]
+}
