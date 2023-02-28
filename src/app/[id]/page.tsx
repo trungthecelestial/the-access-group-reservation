@@ -3,7 +3,7 @@ import type { HomePageParams } from '~/types/params';
 
 import { AppointmentColumns } from './AppointmentColumns';
 
-export async function getAppointment(appointmentId: string) {
+async function getAppointment(appointmentId: string) {
   const appointment = await prisma.appointment.findFirst({
     select: {
       username: true,

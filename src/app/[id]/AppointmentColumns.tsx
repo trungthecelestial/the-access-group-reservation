@@ -3,13 +3,12 @@
 import 'react-day-picker/dist/style.css';
 
 import type { Appointment, Prisma } from '@prisma/client';
-import { format, isWeekend, setHours, setMinutes } from 'date-fns';
+import { format, isWeekend } from 'date-fns';
 import { useRouter } from 'next/navigation';
 import { useReducer, useState, useTransition } from 'react';
 import { DayPicker } from 'react-day-picker';
 
 import { AppointmentForm } from './AppointmentForm';
-import type { getAppointment } from './page';
 
 export type AppointmentState = {
   organizerName: string;
@@ -28,7 +27,7 @@ function reducer(
 
 type AppointmentColumnsProps = {
   appointmentId: string;
-  appointment: Prisma.PromiseReturnType<typeof getAppointment> | null;
+  appointment: Partial<Appointment> | null;
 };
 
 export function AppointmentColumns({
