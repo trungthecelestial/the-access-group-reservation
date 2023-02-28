@@ -25,4 +25,5 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Deploy on Vercel
 
-The app can be accessed via []().
+The app can be accessed via [https://the-access-group-reservation.vercel.app](https://the-access-group-reservation.vercel.app).
+The database is powered by PlanetScale.
